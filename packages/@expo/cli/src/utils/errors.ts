@@ -1,4 +1,3 @@
-import { ConfigError } from '@expo/config';
 import { AssertionError } from 'assert';
 import chalk from 'chalk';
 
@@ -61,8 +60,8 @@ export function logCmdError(error: Error): never {
     exit(error);
   }
 
-  const errorDetails =
-    error.stack && !(error instanceof ConfigError) ? '\n' + chalk.gray(error.stack) : '';
+  // @ts-ignore note(simek): Ignore unknown `isConfigError` field to avoid importing `ConfigError` class (CLI perf).
+  const errorDetails = error.stack && !error?.isConfigError ? '\n' + chalk.gray(error.stack) : '';
 
   exit(chalk.red(error.toString()) + errorDetails);
 }
