@@ -1,3 +1,4 @@
+import { ConfigError } from '@expo/config';
 import { AssertionError } from 'assert';
 import chalk from 'chalk';
 
@@ -60,7 +61,10 @@ export function logCmdError(error: Error): never {
     exit(error);
   }
 
-  exit(chalk.red(error.toString()) + '\n' + chalk.gray(error.stack));
+  const errorDetails =
+    error.stack && !(error instanceof ConfigError) ? '\n' + chalk.gray(error.stack) : '';
+
+  exit(chalk.red(error.toString()) + errorDetails);
 }
 
 /** This should never be thrown in production. */
