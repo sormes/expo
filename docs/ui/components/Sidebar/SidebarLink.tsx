@@ -1,5 +1,5 @@
 import { css } from '@emotion/react';
-import { theme, typography, spacing } from '@expo/styleguide';
+import { theme, typography, spacing, ArrowUpRightIcon, iconSize } from '@expo/styleguide';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import * as React from 'react';
@@ -62,9 +62,13 @@ export const SidebarLink = ({ info, children }: SidebarLinkProps) => {
         <a
           {...customDataAttributes}
           ref={ref}
+          target={info.href.startsWith('http') ? '_blank' : undefined}
           css={[STYLES_LINK, isSelected && STYLES_LINK_ACTIVE]}>
           {isSelected && <div css={STYLES_ACTIVE_BULLET} />}
           {children}
+          {info.href.startsWith('http') && (
+            <ArrowUpRightIcon size={iconSize.small} color={theme.icon.secondary} />
+          )}
         </a>
       </NextLink>
     </div>
@@ -78,9 +82,10 @@ const STYLES_LINK = css`
   text-decoration: none;
   color: ${theme.text.secondary};
   transition: 50ms ease color;
-  align-items: flex-start;
+  align-items: center;
   padding-left: ${spacing[4] + spacing[0.5]}px;
   scroll-margin: 60px;
+  gap: ${spacing[1]}px;
 
   &:hover {
     color: ${theme.link.default};

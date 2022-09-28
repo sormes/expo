@@ -51,3 +51,7 @@ Every quarter there is a new Expo SDK release that typically updates to the late
 ### Support for other React Native versions
 
 Packages in the Expo SDK are intended to support the target React Native version for that SDK. Typically, they will not support older versions of React Native, but they may. When a new version of React Native is released, the latest versions of the Expo SDK packages are typically updated to support it. However, this may take weeks or more, depending on the extent of the changes in the release.
+
+## React Native documentation
+
+React Native documentation is no longer a part of Expo Docs. You can find all the information directly on the [React Native website](https://reactnative.dev/docs/next/components-and-apis).
