@@ -11,6 +11,8 @@
 
 ### 🐛 Bug fixes
 
+- Fixed build errors when testing on React Native nightly builds. ([#19369](https://github.com/expo/expo/pull/19369) by [@kudo](https://github.com/kudo))
+
 ### 💡 Others
 
 ### ⚠️ Notices
