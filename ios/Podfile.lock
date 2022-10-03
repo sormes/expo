@@ -1915,32 +1915,32 @@ PODS:
     - ReactCommon/turbomodule/core
   - react-native-segmented-control (2.4.0):
     - React-Core
-  - react-native-skia (0.1.136):
+  - react-native-skia (0.1.153):
     - React
     - React-callinvoker
     - React-Core
-    - react-native-skia/Api (= 0.1.136)
-    - react-native-skia/Jsi (= 0.1.136)
-    - react-native-skia/RNSkia (= 0.1.136)
-    - react-native-skia/SkiaHeaders (= 0.1.136)
-    - react-native-skia/Utils (= 0.1.136)
-  - react-native-skia/Api (0.1.136):
+    - react-native-skia/Api (= 0.1.153)
+    - react-native-skia/Jsi (= 0.1.153)
+    - react-native-skia/RNSkia (= 0.1.153)
+    - react-native-skia/SkiaHeaders (= 0.1.153)
+    - react-native-skia/Utils (= 0.1.153)
+  - react-native-skia/Api (0.1.153):
     - React
     - React-callinvoker
     - React-Core
-  - react-native-skia/Jsi (0.1.136):
+  - react-native-skia/Jsi (0.1.153):
     - React
     - React-callinvoker
     - React-Core
-  - react-native-skia/RNSkia (0.1.136):
+  - react-native-skia/RNSkia (0.1.153):
     - React
     - React-callinvoker
     - React-Core
-  - react-native-skia/SkiaHeaders (0.1.136):
+  - react-native-skia/SkiaHeaders (0.1.153):
     - React
     - React-callinvoker
     - React-Core
-  - react-native-skia/Utils (0.1.136):
+  - react-native-skia/Utils (0.1.153):
     - React
     - React-callinvoker
     - React-Core
@@ -3494,7 +3494,7 @@ SPEC CHECKSUMS:
   react-native-pager-view: 95d0418c3c74279840abec6926653d32447bafb6
   react-native-safe-area-context: 6c12e3859b6f27b25de4fee8201cfb858432d8de
   react-native-segmented-control: 06607462630512ff8eef652ec560e6235a30cc3e
-  react-native-skia: faacd6a970a757d67c4f4a44a31d347651abbb8e
+  react-native-skia: 78330615997e720dd07db28f4b8dfff22e9dd031
   react-native-webview: a1ed211d50a5047a4fe54e07140991e277cd66e6
   React-perflogger: 48c6b363e867d64b682e84f80ca45636bd65e19c
   React-RCTActionSheet: 33c74fe5c754835e3715c300618da9aa2f7203fa
